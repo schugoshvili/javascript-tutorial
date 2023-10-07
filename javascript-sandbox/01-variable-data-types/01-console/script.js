@@ -1,18 +1,62 @@
-// this is a single line code
+// ways to declare a variable 
+// var, let, const
+
+let firstName = 'John';
+let lastName = 'doe';
+
+console.log(firstName, lastName);
+
+var age = 30;
+
+console.log(age);
+
+// naming variables
+
+// multi word formatting
+
+// reassigning variables
 
 
+age = 31;
 
-console.log(100);
+console.log(age);
 
-console.log('hello world');
+let score;
 
-console.log(20, 'hello', true);
+score = 1;
+
+console.log(score);
+
+if(true) {
+    score = score + 1
+};
+
+const x = 100;
+
+const arr = [1, 2, 3, 4];
+
+arr.push(5);
+
+console.log(arr);
+
+const person = {
+    name: 'brad'
+};
+
+person.name = 'john';
+
+person.email = 'brad@example.com';
+
+console.log(person);
 
 
+// declare multiple values at once 
 
+let a, b, c;
 
-const styles = 'padding: 10px; background-color: white; color: green';
+const d = 10, e= 20, f = 30;
 
+console.log(d);
 
-console.log('%cHello world', styles);
-
+console.log(a);
+console.log(z);

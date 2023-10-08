@@ -1,23 +1,24 @@
-// values are stored on stack
+let amount = 'hello';
 
-const name = 'john';
-const age = 30;
 
-// reference values are stored on heap
+// change string to number
+amount = parseInt(amount);
+//amount = +amount;
+//amount = Number(amount);
 
-const person = {
-    name: 'brad',
-    age: 40
-}
+// change number to string
+//amount = amount.toString();
+//amount = String(amount);
 
-let newName = name;
+//change string to decimal
+//amount = parseFloat(amount);
 
-newName = 'jonathan';
+//convert number to booleon
+//amount = Boolean(amount);
 
-let newPerson = person;
+console.log(Math.sqrt(-1));
+console.log(1 + NaN);
+console.log(undefined + undefined);
+console.log('foo' / 3);
 
-newPerson.name = 'bradley';
-
-console.log(name, newName);
-
-console.log(person, newPerson);
+console.log(amount, typeof amount);

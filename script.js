@@ -1,1 +1,1 @@
-alert('hello from JS file');
+console.log('hello world');

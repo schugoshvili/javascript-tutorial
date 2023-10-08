@@ -1,46 +1,23 @@
-// string
-const firstName = 'sara';
+// values are stored on stack
 
-// number
-
+const name = 'john';
 const age = 30;
-const temp = 98.9;
 
-// boolean
-
-const hasKids = true;
-
-// null
-
-const aptNumber = null;
-
-// undefined
-
-//let score;
-
-const score = undefined;
-
-// symbol
-
-const id = Symbol('id');
-
-// bigInt 
-
-const n = 907283762381401238n;
-
-// reference types
-
-const numbers = [1, 2, 3, 4];
+// reference values are stored on heap
 
 const person = {
-    name: 'John',
-};
-
-function sayHello() {
-    console.log('Hello');
+    name: 'brad',
+    age: 40
 }
 
-const output = sayHello; 
+let newName = name;
 
-console.log(output); 
-console.log(output, typeof output); 
+newName = 'jonathan';
+
+let newPerson = person;
+
+newPerson.name = 'bradley';
+
+console.log(name, newName);
+
+console.log(person, newPerson);

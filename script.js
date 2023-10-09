@@ -1,32 +1,24 @@
-const x = Math.floor(Math.random() * 100 + 1);
-const y = Math.floor(Math.random() * 50 + 1);
+let d;
 
-// get the sum
+d = new Date();
 
-const sum = x + y;
-const sumOutput = `${x} + ${y} = ${sum}`;
-console.log(sumOutput);
+d = d.toString();
 
-// get the difference
+d = new Date(2021, 6, 10, 12, 30, 05);
 
-const diff = x - y;
-const diffOutput = `${x} - ${y} = ${diff}`;
-console.log(diffOutput);
+d = new Date('2021-07-10T12:30:04');
+d = new Date('07/10/2021 12:30:04');
+d = new Date('2022-07-10');
+d = new Date('07/10/2022');
 
-// get the product
+d = Date.now();
 
-const prod = x * y;
-const prodOutput = `${x} * ${y} = ${prod}`;
-console.log(prodOutput);
+d = new Date();
+d = d.getTime();
+d = d.valueOf();
+d = new Date(1696857624073);
 
-// get the quotient
+d =  Math.floor(Date.now() / 1000);
 
-const quot = x / y;
-const quotOutput = `${x} / ${y} = ${quot}`;
-console.log(quotOutput);
 
-// get the remainder
-
-const rm = x % y;
-const rmOutput = `${x} % ${y} = ${rm}`;
-console.log(rmOutput);
+console.log(d);

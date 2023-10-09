@@ -1,25 +1,26 @@
-const num = new Number(5);
+let x;
 
-x = num.toString();
+x = Math.sqrt(9);
 
-x = num.toString().length;
+x = Math.abs(5);
 
-x = num.toFixed(2);
+x = Math.round(4.2);
 
-x = num.toPrecision(3);
+x = Math.ceil(4.2);
 
-x = num.toExponential(2);
+x = Math.floor(4.9);
 
-x = num.toLocaleString('en-US');
+x = Math.pow(2, 3);
 
-x = num.valueOf();
+x = Math.min(4, 5, 6);
 
-x = Number.MAX_VALUE;
+x = Math.max(5, 6, 7);
 
-x = Number.MIN_VALUE;
+x = Math.random();
+
+x = Math.floor(Math.random() * 100 + 1);
 
 
 
 
 console.log(x);
-

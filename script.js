@@ -1,26 +1,32 @@
-let x;
+const x = Math.floor(Math.random() * 100 + 1);
+const y = Math.floor(Math.random() * 50 + 1);
 
-x = Math.sqrt(9);
+// get the sum
 
-x = Math.abs(5);
+const sum = x + y;
+const sumOutput = `${x} + ${y} = ${sum}`;
+console.log(sumOutput);
 
-x = Math.round(4.2);
+// get the difference
 
-x = Math.ceil(4.2);
+const diff = x - y;
+const diffOutput = `${x} - ${y} = ${diff}`;
+console.log(diffOutput);
 
-x = Math.floor(4.9);
+// get the product
 
-x = Math.pow(2, 3);
+const prod = x * y;
+const prodOutput = `${x} * ${y} = ${prod}`;
+console.log(prodOutput);
 
-x = Math.min(4, 5, 6);
+// get the quotient
 
-x = Math.max(5, 6, 7);
+const quot = x / y;
+const quotOutput = `${x} / ${y} = ${quot}`;
+console.log(quotOutput);
 
-x = Math.random();
+// get the remainder
 
-x = Math.floor(Math.random() * 100 + 1);
-
-
-
-
-console.log(x);
+const rm = x % y;
+const rmOutput = `${x} % ${y} = ${rm}`;
+console.log(rmOutput);

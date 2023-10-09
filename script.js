@@ -1,15 +1,25 @@
-const myString = 'developer';
+const num = new Number(5);
 
- // 'Developer'
+x = num.toString();
 
-// how to capitalaze first letter using charAt() method, string [index], .toUppercase
-// substring() and slice() methods
+x = num.toString().length;
+
+x = num.toFixed(2);
+
+x = num.toPrecision(3);
+
+x = num.toExponential(2);
+
+x = num.toLocaleString('en-US');
+
+x = num.valueOf();
+
+x = Number.MAX_VALUE;
+
+x = Number.MIN_VALUE;
 
 
-// Capitalize the first letter using charAt(), substring(), and toUpperCase()
-let myNewString = myString[0].toUpperCase() + myString.substring(1);
 
 
-myNewString = `${myString[0].toUpperCase()}${myString.slice(1)}`;
+console.log(x);
 
-console.log(myNewString);

@@ -1,41 +1,34 @@
 let x;
-let d = new Date();
 
-x = d.toString();
 
-x = d.getTime();
-x = d.valueOf();
-x = d.getFullYear();
-x = d.getMonth() + 1;
+// array literal
+const numbers = [12, 45, 33, 29, 3, 102];
+const mixed = [12, 'hello', true, null];
 
-x = d.getDate();
+// array constructor
 
-x = d.getDay();
-x = d.getHours();
-x = d.getMinutes();
-x = d.getSeconds();
-x = d.getMilliseconds();
+const fruits = new Array('apple', 'grape', 'orange');
 
-x = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}` ;
+x = numbers[0];
 
-x = Intl.DateTimeFormat('en-US').format(d);
-x = Intl.DateTimeFormat('en-GB').format(d);
-x = Intl.DateTimeFormat('Default').format(d);
-x = Intl.DateTimeFormat('Default', { month: 'long'}).format(d);
+x = numbers[0] + numbers[3];
 
-x = d.toLocaleString('default', { month: 'short' });
+x = `my favourite fruit is an ${fruits[2]}`;
 
-x = d.toLocaleString('default', { 
-weekday: 'long',
-year: 'numeric',
-month: 'long',
-day: 'numeric',
-hour: 'numeric',
-munute: 'numeric',
-second: 'numeric',
-timeZone: 'America/New_York'
-    });
+x = numbers.length;
+
+fruits[2] = 'pear';
+
+x = fruits;
+
+//fruits.length = 2;
+
+fruits[3] = 'strawbery';
+
+fruits[fruits.length] = 'blueberry';
+fruits[fruits.length] = 'peach';
 
 
 
 console.log(x);
+

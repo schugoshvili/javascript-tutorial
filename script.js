@@ -1,34 +1,30 @@
 let x;
 
 
-// array literal
-const numbers = [12, 45, 33, 29, 3, 102];
-const mixed = [12, 'hello', true, null];
+const arr = [34, 55, 95, 20, 15];
 
-// array constructor
+//arr.push(100);
 
-const fruits = new Array('apple', 'grape', 'orange');
+//arr.pop();
 
-x = numbers[0];
+//arr.unshift(99);
 
-x = numbers[0] + numbers[3];
+//arr.shift();
 
-x = `my favourite fruit is an ${fruits[2]}`;
+//arr.reverse();
 
-x = numbers.length;
+x = arr.includes(200);
 
-fruits[2] = 'pear';
+x = arr.indexOf(340);
 
-x = fruits;
+x = arr.slice(1, 4);
 
-//fruits.length = 2;
+//x = arr.splice(1, 4);
 
-fruits[3] = 'strawbery';
+//x = arr.splice(3, 1);
 
-fruits[fruits.length] = 'blueberry';
-fruits[fruits.length] = 'peach';
+x = arr.splice(1, 4).reverse().toString().charAt(0);
 
 
 
 console.log(x);
-

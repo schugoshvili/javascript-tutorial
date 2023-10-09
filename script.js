@@ -1,24 +1,41 @@
-let d;
+let x;
+let d = new Date();
 
-d = new Date();
+x = d.toString();
 
-d = d.toString();
+x = d.getTime();
+x = d.valueOf();
+x = d.getFullYear();
+x = d.getMonth() + 1;
 
-d = new Date(2021, 6, 10, 12, 30, 05);
+x = d.getDate();
 
-d = new Date('2021-07-10T12:30:04');
-d = new Date('07/10/2021 12:30:04');
-d = new Date('2022-07-10');
-d = new Date('07/10/2022');
+x = d.getDay();
+x = d.getHours();
+x = d.getMinutes();
+x = d.getSeconds();
+x = d.getMilliseconds();
 
-d = Date.now();
+x = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}` ;
 
-d = new Date();
-d = d.getTime();
-d = d.valueOf();
-d = new Date(1696857624073);
+x = Intl.DateTimeFormat('en-US').format(d);
+x = Intl.DateTimeFormat('en-GB').format(d);
+x = Intl.DateTimeFormat('Default').format(d);
+x = Intl.DateTimeFormat('Default', { month: 'long'}).format(d);
 
-d =  Math.floor(Date.now() / 1000);
+x = d.toLocaleString('default', { month: 'short' });
+
+x = d.toLocaleString('default', { 
+weekday: 'long',
+year: 'numeric',
+month: 'long',
+day: 'numeric',
+hour: 'numeric',
+munute: 'numeric',
+second: 'numeric',
+timeZone: 'America/New_York'
+    });
 
 
-console.log(d);
+
+console.log(x);

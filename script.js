@@ -1,34 +1,53 @@
-const post = {
-    id: 1,
-    title: 'post one',
-    body: 'this is the body of post'
-};
-
-// convert to JSON string
-
-const str = JSON.stringify(post);
-
-console.log(str.id);
-
-// parse JSON
-
-const obj = JSON.parse(str);
-
-console.log(obj.id);
-
-const posts = [ {
-    id: 1,
-    title: 'post one',
-    body: 'this is the body',
-}, 
-{id: 2,
-    title: 'post two',
-    body: 'this is the body'}, 
-
+const library = [
+    {
+        title: 'The road ahead',
+        author: 'bill gates',
+        status: {
+            own: true,
+            reading: false,
+            read: false
+        }
+        
+    },
+    {
+        title: 'steve jobs',
+        author: 'wakter isaacson',
+        status: {
+            own: true,
+            reading: false,
+            read: false
+        }
+        
+    },
+    {
+        title: 'mockingjay',
+        author: 'susan collins',
+        status: {
+            own: true,
+            reading: false,
+            read: false
+        }
+        
+    },
 ];
 
-const str2 = JSON.stringify(posts);
+//step 2
+library[0].status.read = true;
+library[1].status.read = true;
+library[2].status.read = true;
+
+console.log(library);
+
+//step 3    
+
+const { title: firstBook } = library[0];
+
+console.log(firstBook);
+
+// step 4 
 
 
 
-console.log(str2);
+const libraryJSON = JSON.stringify(library);
+
+console.log(libraryJSON);

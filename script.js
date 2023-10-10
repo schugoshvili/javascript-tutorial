@@ -1,29 +1,40 @@
+// nesting concat & spread
+
 let x;
 
+const fruits = ['apple', 'pear', 'orange'];
+const berries = [ 'strawberry', 'blueberry', 'rasberry' ];
 
-const arr = [34, 55, 95, 20, 15];
+//fruits.push(berries);
 
-//arr.push(100);
+//x = fruits[3][1];
 
-//arr.pop();
+const allfruits = [fruits, berries];
 
-//arr.unshift(99);
+x = allfruits[1][0];
 
-//arr.shift();
+x = fruits.concat(berries);
 
-//arr.reverse();
+// spread operator (...)
 
-x = arr.includes(200);
+x = [...fruits, ...berries];
 
-x = arr.indexOf(340);
+// Flatten arrays
 
-x = arr.slice(1, 4);
+const arr = [1, 2, [3, 4], 5, [6, 7], 8];
+x = arr.flat();
 
-//x = arr.splice(1, 4);
+// static methods on array object
 
-//x = arr.splice(3, 1);
+x = Array.isArray('hello');
 
-x = arr.splice(1, 4).reverse().toString().charAt(0);
+x = Array.from('12345');
+
+const a = 1;
+const b = 2;
+const c = 3;
+
+x = Array.of(a, b, c);
 
 
 

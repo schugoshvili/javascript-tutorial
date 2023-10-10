@@ -1,45 +1,50 @@
-// object literals 
+// object spread operator and methods
 
 let x;
 
+const todo = new Object();
+
+
+todo.id = 1;
+todo.name = 'Buy Milk';
+todo.completed = false;
+
+x = todo;
 
 const person = {
-  name: 'john doe',
-  age: 30,
-  isAdmin: true,
-  address: {
-    street: '123 main st',
-    city: 'boston',
-    state: 'MA',
-  },
-  hobbies: ['music', 'sports'],
+    address: {
+        coords: {
+            lat: 42.29382,
+            lng: -71.82328, // This is correct now
+        }
+    }
 };
 
-x = person.name;
-x = person['age'];
-x = person.address.state;
-x = person.hobbies[0];
+x = person.address.coords.lat;
 
-person.name = 'jane doe';
-person['isAdmin'] = false;
+const obj1 = {a: 1, b: 2};
 
-x = person;
+const obj2 = {c: 3, d: 4};
 
-delete person.age;
+const obj3 = {...obj1, ...obj2,};
+const obj4 = Object.assign({}, obj1, obj2);
 
-person.hasChildren = true;
-person.greet = function () {
-    console.log(`hello my name is ${this.name}`)
-}
+const todos = [
+    { id: 1, name: 'buy milk'},
+    { id: 2, name: 'pickup kids from school'},
+    { id: 3, name: 'take out trash'},
+];
 
-person.greet();
+x = todos[0].name;
 
-const person2 = {
-    'first name': 'Brad',
-    'Last name': 'Traversy',
-}
+x = Object.keys(todo);
 
-x = person2['first name'];
+x = Object.keys(todo).length;
 
+x = Object.values(todo);
+
+x = Object.entries(todo); 
+
+x = todo.hasOwnProperty('age');
 
 console.log(x);

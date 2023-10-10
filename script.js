@@ -1,50 +1,34 @@
-// object spread operator and methods
-
-let x;
-
-const todo = new Object();
-
-
-todo.id = 1;
-todo.name = 'Buy Milk';
-todo.completed = false;
-
-x = todo;
+const firstName = 'John';
+const lastName = 'Doe';
+const age = '30';
 
 const person = {
-    address: {
-        coords: {
-            lat: 42.29382,
-            lng: -71.82328, // This is correct now
-        }
-    }
+    firstName,
+    lastName,
+    age,
 };
 
-x = person.address.coords.lat;
+console.log(person.age);
 
-const obj1 = {a: 1, b: 2};
+// destructuring 
 
-const obj2 = {c: 3, d: 4};
+const todo = {
+    id: 1,
+    title: 'take out trash',
+    user: {
+        name: 'John',
+    },
+};
 
-const obj3 = {...obj1, ...obj2,};
-const obj4 = Object.assign({}, obj1, obj2);
+const { id, title, user: { name } } = todo;
 
-const todos = [
-    { id: 1, name: 'buy milk'},
-    { id: 2, name: 'pickup kids from school'},
-    { id: 3, name: 'take out trash'},
-];
+console.log(id);
 
-x = todos[0].name;
+//destructure arrays
 
-x = Object.keys(todo);
+const numbers = [23, 67, 33, 49, 52];
 
-x = Object.keys(todo).length;
+const [first, second, ...nums] = numbers;
 
-x = Object.values(todo);
 
-x = Object.entries(todo); 
-
-x = todo.hasOwnProperty('age');
-
-console.log(x);
+console.log(first, second, nums);

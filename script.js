@@ -1,53 +1,24 @@
-const library = [
-    {
-        title: 'The road ahead',
-        author: 'bill gates',
-        status: {
-            own: true,
-            reading: false,
-            read: false
-        }
-        
-    },
-    {
-        title: 'steve jobs',
-        author: 'wakter isaacson',
-        status: {
-            own: true,
-            reading: false,
-            read: false
-        }
-        
-    },
-    {
-        title: 'mockingjay',
-        author: 'susan collins',
-        status: {
-            own: true,
-            reading: false,
-            read: false
-        }
-        
-    },
-];
+// function basics
 
-//step 2
-library[0].status.read = true;
-library[1].status.read = true;
-library[2].status.read = true;
+function sayHello() {
+    console.log("Hello world!");
+}
 
-console.log(library);
+sayHello();
 
-//step 3    
+function add(num1, num2) {
+console.log(num1 + num2);
+}
 
-const { title: firstBook } = library[0];
-
-console.log(firstBook);
-
-// step 4 
+add(5, 10);
 
 
+function subtract(num1, num2) {
+    return num1 - num2;
 
-const libraryJSON = JSON.stringify(library);
+    console.log('After the return');
+}
 
-console.log(libraryJSON);
+const result = subtract(10, 2);
+
+console.log(result, subtract(20, 5));

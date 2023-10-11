@@ -1,65 +1,28 @@
-// more on params and arguments
+// Global & Function scope
 
-function registerUser(user = 'bot') {
-//    if (!user) {
-//        user = 'bot';
-  //  }
+const x = 100;
 
 
-    return user + ' is registered';
+console.log(x, 'in global scope');
+function run() {
+console.log(innerHeight);
+console.log(x, 'in function');
+//console.log(y);
+}
+
+run();
+
+if (true) {
+    console.log(x, 'in block scope');
 }
 
 
-
-
-console.log(registerUser());
-
-
-//rest params
-
-function sum(...numbers) {
-    let total = 0;
-
-    for (const num of numbers) {
-        total += num;
-    }
-    return total;
+function add() {
+    const x = 1;
+    const y = 50;
+    console.log(x + y);
 }
 
-console.log(sum(1, 2, 3, 4, 5, 6, 100));
 
-// Objects as params
-
-function loginUser(user) {
-    return `the user ${user.name} with the id of ${user.id} is logged in`;
-}
-
-const user = {
-    id: 1,
-    name: 'John',
-};
-
-
-console.log(loginUser(user));
-
-console.log(
-    loginUser({
-    id: 2,
-    name: 'sara',
-})
-
-);
-
-// Arrays as params
-
-
-
-function getRandom(arr) {
-    const randomIndex = Math.floor(Math.random() * arr.length);
-
-    const item = arr[randomIndex];
-
-    console.log(item);
-}
-
-getRandom([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+//console.log(y);
+add();

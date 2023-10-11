@@ -1,24 +1,65 @@
-// function basics
+// more on params and arguments
 
-function sayHello() {
-    console.log("Hello world!");
+function registerUser(user = 'bot') {
+//    if (!user) {
+//        user = 'bot';
+  //  }
+
+
+    return user + ' is registered';
 }
 
-sayHello();
 
-function add(num1, num2) {
-console.log(num1 + num2);
+
+
+console.log(registerUser());
+
+
+//rest params
+
+function sum(...numbers) {
+    let total = 0;
+
+    for (const num of numbers) {
+        total += num;
+    }
+    return total;
 }
 
-add(5, 10);
+console.log(sum(1, 2, 3, 4, 5, 6, 100));
 
+// Objects as params
 
-function subtract(num1, num2) {
-    return num1 - num2;
-
-    console.log('After the return');
+function loginUser(user) {
+    return `the user ${user.name} with the id of ${user.id} is logged in`;
 }
 
-const result = subtract(10, 2);
+const user = {
+    id: 1,
+    name: 'John',
+};
 
-console.log(result, subtract(20, 5));
+
+console.log(loginUser(user));
+
+console.log(
+    loginUser({
+    id: 2,
+    name: 'sara',
+})
+
+);
+
+// Arrays as params
+
+
+
+function getRandom(arr) {
+    const randomIndex = Math.floor(Math.random() * arr.length);
+
+    const item = arr[randomIndex];
+
+    console.log(item);
+}
+
+getRandom([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);

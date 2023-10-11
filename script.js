@@ -34,5 +34,5 @@ console.log(minMax([1, 2, 3, 4, 5]));
  
  const output = `the area of a regtangle with length of ${length} a width of ${width} is ${area}.`;
  console.log(output);
-})(10, 5);
+})(20, 10);
 

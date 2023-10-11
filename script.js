@@ -1,23 +1,17 @@
-// nester scope
+// function declaration and XPathExpression
 
-function first() {
-    const x = 100;
+console.log(addDollarSign(100));  // works
 
-    function second() {
-        const y = 200;
-        console.log(x + y);
-    }
-
-    second();
+function  addDollarSign(value) {
+    return '$' + value;
 }
 
-first();
 
-if (true) {
-    const x = 100;
-    if (x === 100) {
-        const y = 200;
-        console.log(x + y);
-    }
-    
-}
+
+
+console.log(addPlusSign(200)); // won't work
+
+const addPlusSign = function(value) {
+    return '+' + value;
+};
+

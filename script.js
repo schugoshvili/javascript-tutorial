@@ -1,13 +1,29 @@
-const x = 10;
-const y = 7;
+const d = new Date(10, 30, 2022, 6, 0, 0);
+const hour = d.getHours();
 
-if (x > y) { 
-    console.log(`${x} is greater than ${y}`);
+console.log(hour);
+
+if( hour < 12 ) {
+    console.log('good morning');
+} else if (hour < 18) {
+    console.log('good adternoon');
+} else {
+    console.log('good night');
 }
 
+// nest ig
 
-if (x === y) { 
-    console.log(`${x} is equal to ${y}`);
+if( hour == 12 ) {
+    console.log('good morning');
+    if (hour === 6) {
+        console.log('wake up');
+    }
+} else if (hour < 18) {
+    console.log('good adternoon');
 } else {
-    console.log(`${x} is not equal to ${y}`);
+    console.log('good night');
+}
+
+if (hour >= 20) {
+    console.log('zzzzzzzzzzz');
 }

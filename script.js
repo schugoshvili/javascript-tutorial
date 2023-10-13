@@ -1,10 +1,14 @@
-function tickAnimation(watchedHours) {
-    if (watchedHours < 4) {
-        for (let i = p) "Watched hours are less than 4 hours.";
-    } else {
-        return "Watched hours are 4 hours or more.";
-    }
+const x = 100;
+const y = 50;
+
+function getSum (n1, n2) {
+    const sum = n1 + n2;
+    return sum;
 }
 
+const sum1 = getSum(x, y);
+const sum2 = getSum(10, 5);
 
-console.log(checkWatchedHours(5)); 
+
+console.log(sum1, sum2);
+

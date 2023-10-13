@@ -1,38 +1,10 @@
-// challenge
-
-//function getCelsius(f) {
-   // const celsius = (f - 32) * 5 / 9;
-  //  return celsius;
-
-//}
-
-const getCelsius = (f) => (f - 32) * 5 / 9;
-
-
-console.log(`the temperature is ${getCelsius(32)} \u2103`);
-
-
-// challenge 2
-
-function minMax(arr) {
-const min = Math.min(...arr);
-const max = Math.max(...arr);
-console.log(max);
-
-return {
-    min,
-    max
-}
+function tickAnimation(watchedHours) {
+    if (watchedHours < 4) {
+        for (let i = p) "Watched hours are less than 4 hours.";
+    } else {
+        return "Watched hours are 4 hours or more.";
+    }
 }
 
-console.log(minMax([1, 2, 3, 4, 5]));
 
-//challenge 3
-
-((length, width) => {
- const area = length * width;
- 
- const output = `the area of a regtangle with length of ${length} a width of ${width} is ${area}.`;
- console.log(output);
-})(20, 10);
-
+console.log(checkWatchedHours(5)); 

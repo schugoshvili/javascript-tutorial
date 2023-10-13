@@ -1,14 +1,13 @@
-const x = 100;
-const y = 50;
+const x = 10;
+const y = 7;
 
-function getSum (n1, n2) {
-    const sum = n1 + n2;
-    return sum;
+if (x > y) { 
+    console.log(`${x} is greater than ${y}`);
 }
 
-const sum1 = getSum(x, y);
-const sum2 = getSum(10, 5);
 
-
-console.log(sum1, sum2);
-
+if (x === y) { 
+    console.log(`${x} is equal to ${y}`);
+} else {
+    console.log(`${x} is not equal to ${y}`);
+}

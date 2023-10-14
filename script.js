@@ -1,22 +1,31 @@
-const colourObj = {
-    colour1: 'red',
-    colour2: 'green',
-    colour3: 'blue',
-    colour4: 'green'
-};
+let chuvak = 'mi xatem mnoga siski, mi xatem mnoga...';
+let randomWoman = 'chto samaya Glavnaya V Jenshine?';
 
+console.log(`- ${chuvak}\n- ${randomWoman}`);
 
-for (const key in colourObj) {
-    console.log(key, colourObj[key]);
+function shtoSamayaGlavnayaVJenshine(randomWoman) {
+    let samayaGlavnayaVJenshine;
+
+    if (randomWoman === 'chto samaya Glavnaya V Jenshine?') {
+        samayaGlavnayaVJenshine = "DUSHA!";
+        console.log('-' + samayaGlavnayaVJenshine + "!");
+        console.log('[Playing Ludovico Einaudi repertoire...]');
+    } else if (randomWoman === '-A kak je siski?') {
+        console.log('-siski eta xarasho, no glavnoe...');
+        console.log('DUSHA');
+        console.log('[Playing Ludovico Einaudi repertoire...]');
+    } else {
+        console.log(chuvak);
+    }
 }
 
-const colourArr = ['red', 'green', 'yellow', 'blue']
 
-for (const colour in colourArr) {
-    console.log(colour);
-}
+shtoSamayaGlavnayaVJenshine(randomWoman);
+
+randomWoman = '-A kak je siski?';
+console.log(randomWoman);
+
+shtoSamayaGlavnayaVJenshine(randomWoman);
 
 
-for (const key in colourArr) {
-    console.log(colourArr[key]);
-}
+// github commit number 57

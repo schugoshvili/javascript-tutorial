@@ -1,19 +1,30 @@
-/*for (let i = 0; i <= 20; i++) {
-    if (i === 15) {
-   console.log('breaking...');
-    break;
-    }
-    console.log(i);
+let i = 1;
+
+/* while (i <= 20) {
+    console.log('number' + i)
+    i++;
+} 
+
+const arr = [10, 20, 30, 40, 50];
+
+while (i < arr.length) {
+    console.log(arr[i]);
+    i++;
+}  
+// nesting while loops
+
+while (i <= 5) {
+    console.log('number ' + i);
+
+    let j = 1;
+    while (j < 5) {
+    console.log(`${i} * ${j} = ${i * j}`);
+    j++;
+}
+i++;
 } */
- 
-// continue 
 
-for (let i = 0; i <= 20; i++) {
-    if (i === 13) { console.log('skippin 13...');
-
-continue;
-}
-
-console.log(i);
-
-}
+do {
+    console.log('number ' + i);
+    i++;
+} while (i < 0);

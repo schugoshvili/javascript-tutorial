@@ -1,52 +1,33 @@
+console.log(10 < 20 && 30 > 15 && 40 > 30);
+console.log(10 > 20 || 5 > 2);
+
+// & - will return first falsy value or last value
+
+let a;
+
+a = 0 && 2 && 30;
+
+console.log(a);
+
+const posts = ['pos', 'pios'];
+
+posts.length > 0 && console.log(posts[0]);
+
+// || will return the first truthy value or the last value
+
+let b;
+
+b = 10 || 20;
+b = 0 || 20;
+b = 0 || null || '' || undefined;
+
+console.log(b);
+
+// ?? - returns the right side operand when left is null or undefined
+
+let c;
+c = 10 ?? 20;
+c = 0 ?? 20;
 
 
-const x = 0;
-
-
-if (x) {
-    console.log('this is truthy');
-} else {
-    console.log('this is falsy');
-}
-
-console.log(Boolean(x));
-
-// truthy and falsy caveats 
-
-const children = 0;
-
-if (!isNaN(children)) {
-    console.log(`you have ${children} children`);
-} else {
-    console.log('please enter number of children');
-}
-
-// checking for empty arrays
-
-const posts = ['1'];
-console.log(posts.length);
-
-if (posts.length > 1) {
-    console.log('list posts');
-} else {
-    console.log('no posts to list ');
-};
-
-// checking for empty objects
-
-const user = {
-    name: 'jane',
-};
-
-
-if (Object.keys(user).length > 0) {
-    console.log('list user')}
-    else {
-        console.log('no user to list');
-    }
-
-    // lose equality (==)
-
-    console.log(false === 0);
-    console.log('' === 0);
-    console.log(null === undefined);
+console.log(c);

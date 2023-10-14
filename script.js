@@ -1,15 +1,6 @@
 const d = new Date(10, 30, 2022, 6, 0, 0);
 const hour = d.getHours();
 
-console.log(hour);
-
-if( hour < 12 ) {
-    console.log('good morning');
-} else if (hour < 18) {
-    console.log('good adternoon');
-} else {
-    console.log('good night');
-}
 
 // nest ig
 

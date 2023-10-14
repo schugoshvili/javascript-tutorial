@@ -1,24 +1,55 @@
-let b = 20;
-if (b) {
-    b = 20;
+const age = 20;
+
+// using an if statement;
+
+if (age >= 18) {
+    console.log('you can vote');
+} else {
+    console.log('you cannot vote');
 }
 
-b = b && 20;
+// using an ternary operator;
 
-b &&= 20;
+age >= 18 ? console.log('you can vote') : console.log('you cannot vote');
 
-console.log(b);
+// assigning a conditional value tu a variable 
 
-let c = null;
 
-if (c === null || c === undefined) {
-    c = 20;
-}
+const canVote = age >= 18 ? true : false;
+const canVote1 = age >= 18 ? 'you can vote' : ' u cant vote';
 
-c = c ?? 20;
+console.log(canVote);
+console.log(canVote1);
 
-c ??= 20;
+// multiple statements
 
-console.log(c);
+const auth = true;
+//let redirect;
 
-//logical operatorss
+//if (auth) {
+  //  alert('welcome to the dashboard');
+    //redirect = '/dashboard'
+//} else {
+  //  alert ('access denied');
+    //redirect = '/login';
+//}
+
+// const redirect = auth ? (alert('welcome to the dashboard'), '/dashboard')
+// : (alert('access denied'), '/login');
+
+// console.log(redirect);
+
+// auth ? console.log('welcome to the dashboard') : null; 
+
+auth && console.log('welcome to the dashboard');
+
+
+
+
+
+
+
+
+
+
+

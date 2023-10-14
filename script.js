@@ -1,28 +1,27 @@
-/* let i = 1;
-while (i <= 100) {
-    if (i % 3 === 0 && i % 5 === 0) {
-        console.log('FizzBuzz');
-    } else if (i % 3 === 0) {
-        console.log('Fizz');
-    } else if (i % 5 === 0) {
-        console.log('Buzz');
-    } else {
-        console.log(i);
-    }
-    i++;
+// loop through the arrays
+
+const items = [ 'book', 'table', 'chair', 'kite'];
+const users = [ { name: 'John', email: 'john@example.com', carname: 'BMW' }];
+
+for (const item of items) {
+    console.log(item);
 }
 
-*/
-
-for (let i = 1; i <= 100; i++) {
-    if (i % 15 === 0) {
-        console.log('FizzBuzz');
-    } else if (i % 3 === 0) {
-        console.log('Fizz');
-    } else if (i % 5 === 0) {
-        console.log('Buzz');
-    } else {
-        console.log(i);
-    }
+for (const user of users) {
+    console.log(user.name, user.email, user.carname);
 }
 
+const str = 'hello world';
+
+for (const letter of str) {
+    console.log(letter);
+}
+
+const map = new Map();
+
+map.set('name', 'john');
+map.set('age', 30);
+
+for (const [key, value] of map) {
+    console.log(key, value);
+}

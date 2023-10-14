@@ -1,20 +1,52 @@
-const d = new Date(10, 30, 2022, 6, 0, 0);
-const hour = d.getHours();
 
 
-// nest ig
+const x = 0;
 
-if( hour == 12 ) {
-    console.log('good morning');
-    if (hour === 6) {
-        console.log('wake up');
-    }
-} else if (hour < 18) {
-    console.log('good adternoon');
+
+if (x) {
+    console.log('this is truthy');
 } else {
-    console.log('good night');
+    console.log('this is falsy');
 }
 
-if (hour >= 20) {
-    console.log('zzzzzzzzzzz');
+console.log(Boolean(x));
+
+// truthy and falsy caveats 
+
+const children = 0;
+
+if (!isNaN(children)) {
+    console.log(`you have ${children} children`);
+} else {
+    console.log('please enter number of children');
 }
+
+// checking for empty arrays
+
+const posts = ['1'];
+console.log(posts.length);
+
+if (posts.length > 1) {
+    console.log('list posts');
+} else {
+    console.log('no posts to list ');
+};
+
+// checking for empty objects
+
+const user = {
+    name: 'jane',
+};
+
+
+if (Object.keys(user).length > 0) {
+    console.log('list user')}
+    else {
+        console.log('no user to list');
+    }
+
+    // lose equality (==)
+
+    console.log(false === 0);
+    console.log('' === 0);
+    console.log(null === undefined);

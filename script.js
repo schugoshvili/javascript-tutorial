@@ -1,27 +1,22 @@
-// loop through the arrays
+const colourObj = {
+    colour1: 'red',
+    colour2: 'green',
+    colour3: 'blue',
+    colour4: 'green'
+};
 
-const items = [ 'book', 'table', 'chair', 'kite'];
-const users = [ { name: 'John', email: 'john@example.com', carname: 'BMW' }];
 
-for (const item of items) {
-    console.log(item);
+for (const key in colourObj) {
+    console.log(key, colourObj[key]);
 }
 
-for (const user of users) {
-    console.log(user.name, user.email, user.carname);
+const colourArr = ['red', 'green', 'yellow', 'blue']
+
+for (const colour in colourArr) {
+    console.log(colour);
 }
 
-const str = 'hello world';
 
-for (const letter of str) {
-    console.log(letter);
-}
-
-const map = new Map();
-
-map.set('name', 'john');
-map.set('age', 30);
-
-for (const [key, value] of map) {
-    console.log(key, value);
+for (const key in colourArr) {
+    console.log(colourArr[key]);
 }

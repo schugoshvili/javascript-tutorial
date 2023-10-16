@@ -1,20 +1,19 @@
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, ];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-//const evenNumbers = numbers.filter(function (number) {
-  //  return number % 2 === 0;
-// }) ;
+const doubledNumbers = numbers.map((number) => 'number ' + number);
+
+console.log(doubledNumbers);
+
+// same with foreach
+
+const doubledNumbers2 = [];
 
 
-//const evenNumbers = numbers.filter((number) => number % 2 === 0);
-
-/*const evenNumbers = [];
-numbers.forEach ((number) => {
-    if (number % 2 === 0) {
-        evenNumbers.push(number);
-    }
+numbers.forEach((number) => {
+  doubledNumbers2.push(number * 2);
 });
 
-console.log(evenNumbers); */
+console.log(doubledNumbers2);
 
 
 const companies = [
@@ -74,22 +73,61 @@ const companies = [
     },
   ];
 
-// get only retail
+  //create array of company names
 
-//const retailCompanies = companies.filter((company) => company.category === "Retail");
+  const companyNames = companies.map((company) => company.name);
 
-// console.log(retailCompanies);
+  console.log(companyNames);
 
-// get companies in or after 2007 in or before 2012
+  // create an array with just company and category 
 
-//const earlyCompanies = companies.filter((company) => company.start >= 2007
-//&& company.end <= 2012
-//)
+  const companyInfo = companies.map((company) => {
+    return {
+        name: company.name,
+        category: company.category,
 
-//console.log(earlyCompanies);
+    }
+  });
 
-// get companies that lasted 10 years or more
+  console.log(companyInfo);
 
-const longCompanies = companies.filter((company) => company.end - company.start >= 10 );
+// create array of the length of each company in years  and names
 
-console.log(longCompanies);
+const companyYears = companies.map((company) => {
+    return {
+        name: company.name,
+        length: company.end - company.start + ' years'
+    }
+});
+
+console.log(companyYears);
+
+// chain map methods 
+
+const squareAndDouble = numbers
+
+.map((number) => Math.sqrt(number))
+.map((sqrt) => sqrt * 2);
+
+const squareAndDouble2 = numbers
+.map (function (number) {
+    return Math.sqrt(number);
+}
+)
+
+.map(function (sqrt) {
+    return sqrt * 2;
+})
+.map(function (sqrtDoubled) {
+    return sqrtDoubled * 3;
+  });
+
+
+  //chaining different methods
+
+  const evenDouble = numbers
+  .filter((number) => number % 2 === 0)
+  .map((number) => number * 2);
+
+  console.log(evenDouble);
+

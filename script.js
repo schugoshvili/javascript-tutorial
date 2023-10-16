@@ -1,31 +1,24 @@
-let chuvak = 'mi xatem mnoga siski, mi xatem mnoga...';
-let randomWoman = 'chto samaya Glavnaya V Jenshine?';
+const socials = ['twitter', 'facebook', 'LinkedIn', 'Instagram'];
 
-console.log(`- ${chuvak}\n- ${randomWoman}`);
+//console.log(socials.__proto__);
 
-function shtoSamayaGlavnayaVJenshine(randomWoman) {
-    let samayaGlavnayaVJenshine;
+//socials.forEach(function (item) {
+  //  console.log(item);
+// });
 
-    if (randomWoman === 'chto samaya Glavnaya V Jenshine?') {
-        samayaGlavnayaVJenshine = "DUSHA!";
-        console.log('-' + samayaGlavnayaVJenshine + "!");
-        console.log('[Playing Ludovico Einaudi repertoire...]');
-    } else if (randomWoman === '-A kak je siski?') {
-        console.log('-siski eta xarasho, no glavnoe...');
-        console.log('DUSHA');
-        console.log('[Playing Ludovico Einaudi repertoire...]');
-    } else {
-        console.log(chuvak);
-    }
+//socials.forEach((item, index, arr) => console.log(`${index} - ${item}`, arr));
+
+function logSocials(social) {
+console.log(social);
 }
 
+// socials.forEach(logSocials);
 
-shtoSamayaGlavnayaVJenshine(randomWoman);
-
-randomWoman = '-A kak je siski?';
-console.log(randomWoman);
-
-shtoSamayaGlavnayaVJenshine(randomWoman);
-
-
-// github commit number 57
+const socialObjs = [
+    { name: 'twitter', url: 'http://twitter.com/' },
+    { name: 'facebook', url: 'http://facebook.com' },
+    { name: 'linkedin', url: 'http://linkedin.com' },
+    { name: 'instagram', url: 'http://instagram.com' }
+  ];
+  
+  socialObjs.forEach((item) => console.log(item));

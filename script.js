@@ -1,36 +1,29 @@
-// const names = ['brad', 'george', 'david', 'tim', 'sarah'];
+// const items  = ['book', 'table', 'chair', 'kite'];
 
-// for (let i = 0; i < names.length; i++) {
+// const users = [
+//     {name: 'kate'},
+//     {name: 'kite'},
+//     {name: 'chair'},
+// ];
 
-//     if (i === 2 || i === 3) {
-//         console.log(names[i] + ' is the best');
-//     } else {
-//     console.log(names[i]);
-//     }
-// //
+// for (user of users) {
+//     console.log(user.name);
+// }
 
-// continue 
 
-// for (let i = 0; i <=20; i++) {
-//     if (i = 13) {
-//         console.log('skippin 13');
+// const str = 'get the hell autta here';
 
-//         continue;
-//     }
-//     console.log(i);
-// // }
+// for (const letter of str) {
+//     console.log(letter);
+// }
 
-i = null;
-j = 1;
+// //loop over maps 
 
-while (i <= 5) {
-    console.log('number ' + i);
+const map = new Map();
 
-    let j = 1;
+map.set('name', 'jon');
+map.set('age', '30');
 
-    while (j <= 10) {
-        console.log(`${i} * ${j} = ${i * j}`);
-        j++
-    }
-    i++
+for (const [key, value] of map) {
+    console.log(key, value);
 }

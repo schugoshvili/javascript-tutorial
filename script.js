@@ -1,29 +1,16 @@
-// const items  = ['book', 'table', 'chair', 'kite'];
+const colorObj = {
+    color1: 'red',
+    color2: 'blue',
+    color3: 'orange',
+    color4: 'green'
+};
 
-// const users = [
-//     {name: 'kate'},
-//     {name: 'kite'},
-//     {name: 'chair'},
-// ];
+for (const key in colorObj) {
+    console.log(key, colorObj[key]);
+}
 
-// for (user of users) {
-//     console.log(user.name);
-// }
+const colorArray = ['red', 'green', 'blue', 'yellow'] 
 
-
-// const str = 'get the hell autta here';
-
-// for (const letter of str) {
-//     console.log(letter);
-// }
-
-// //loop over maps 
-
-const map = new Map();
-
-map.set('name', 'jon');
-map.set('age', '30');
-
-for (const [key, value] of map) {
-    console.log(key, value);
+for (const key in colorArray) {
+    console.log(colorArray[key]);
 }

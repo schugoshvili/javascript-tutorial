@@ -50,3 +50,11 @@ const myArray3 = [1, 2, 3, 4, 5];
 
 const doubledArray = myArray.map(item => item * 2);
 console.log(doubledArray);
+
+// iterating with filter (returns a new array based on a condition):
+javascript
+Copy code
+const myArray = [1, 2, 3, 4, 5];
+
+const evenNumbers = myArray.filter(item => item % 2 === 0);
+console.log(evenNumbers);

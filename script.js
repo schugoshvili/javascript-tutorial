@@ -1,60 +1,22 @@
-//Basic Array Iteration:
+const numbers = [1, 2, 3, 4, 5];
 
-const myArray = [1, 2, 3, 4, 5];
+const doubledNumbers = numbers.map((number) => 'number ' + number);
 
-myArray.forEach(function(item) {
-    console.log(item);
-});
+console.log(doubledNumbers);
 
-//Array Iteration with Arrow Function:
+// same with for.each
 
-const myArray1 = [1, 2, 3, 4, 5];
+const doubledNumbers2 = [];
 
-myArray.forEach(item => {
-    console.log(item);
-});
+numbers.forEach((number) => {
+    doubledNumbers2.push(number * 2);
 
-//Iterating through an Object's Properties:
+} );
 
-const myObject = { name: "John", age: 30, city: "New York" };
+console.log(doubledNumbers2);
 
-for (const key in myObject) {
-    console.log(`${key}: ${myObject[key]}`);
-}
+//create an array of company names
 
-//Iterating through an Object using Object.keys:
+const companyNames = companies.map((company) => company.name);
 
-const myObject = { name: "John", age: 30, city: "New York" };
-
-Object.keys(myObject).forEach(key => {
-    console.log(`${key}: ${myObject[key]}`);
-});
-
-// Iterating through an Array of Objects:
-const people = [
-    { name: "Alice", age: 25 },
-    { name: "Bob", age: 30 },
-    { name: "Charlie", age: 35 }
-];
-
-people.forEach(person => {
-    console.log(`${person.name} is ${person.age} years old.`);
-});
-
-
-//Iterating with map (returns a new array):
-
-javascript
-Copy code
-const myArray3 = [1, 2, 3, 4, 5];
-
-const doubledArray = myArray.map(item => item * 2);
-console.log(doubledArray);
-
-// iterating with filter (returns a new array based on a condition):
-javascript
-Copy code
-const myArray = [1, 2, 3, 4, 5];
-
-const evenNumbers = myArray.filter(item => item % 2 === 0);
-console.log(evenNumbers);
+console.log(companyNames);

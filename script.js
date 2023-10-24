@@ -1,22 +1,9 @@
-const numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const doubledNumbers = numbers.map((number) => 'number ' + number);
+const evenDouble = numbers
 
-console.log(doubledNumbers);
+.filter((number) => number % 2 === 0)
+.map((number) => number * 2);
 
-// same with for.each
+console.log(evenDouble);
 
-const doubledNumbers2 = [];
-
-numbers.forEach((number) => {
-    doubledNumbers2.push(number * 2);
-
-} );
-
-console.log(doubledNumbers2);
-
-//create an array of company names
-
-const companyNames = companies.map((company) => company.name);
-
-console.log(companyNames);

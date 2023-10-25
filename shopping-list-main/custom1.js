@@ -180,16 +180,93 @@
 // //    one(); // 1
 // //    two(); // 2
 
-function outer() {
-    var a = 1;
-    function inner() {
-    var b = 2;
-    // we can access both `a` and `b` here
-    console.log( a + b ); // 3
-    }
-    inner();
-    // we can only access `a` here
-    console.log( a ); // 1
-   }
-   outer();
-   
+// function outer() {
+//     var a = 1;
+//     function inner() {
+//     var b = 2;
+//     // we can access both `a` and `b` here
+//     console.log( a + b ); // 3
+//     }
+//     inner();
+//     // we can only access `a` here
+//     console.log( a ); // 1
+//    }
+//    outer();
+
+// const phonePrice = 500; // Price of one phone
+// const accessoryPrice = 50; // Price of one accessory
+// const spendingThreshold = 1000; // Your spending limit
+// const bankAccountBalance = 2000; // Your bank account balance
+// let totalPurchaseAmount = 0;
+
+// // Function to calculate the tax on the purchase
+// function calculateTax(amount) {
+//     const taxRate = 0.08; // 8% sales tax
+//     return amount * taxRate;
+// }
+
+// while (totalPurchaseAmount + phonePrice + calculateTax(totalPurchaseAmount) < spendingThreshold && totalPurchaseAmount + phonePrice <= bankAccountBalance) {
+//     totalPurchaseAmount += phonePrice;
+    
+//     if (totalPurchaseAmount + calculateTax(totalPurchaseAmount) < spendingThreshold) {
+//         totalPurchaseAmount += accessoryPrice;
+//     }
+// }
+
+// totalPurchaseAmount += calculateTax(totalPurchaseAmount);
+
+// console.log("Total purchase amount: $" + totalPurchaseAmount.toFixed(2));
+
+// if (totalPurchaseAmount > bankAccountBalance) {
+//     console.log("You cannot afford this purchase.");
+// } else {
+//     console.log("Purchase successful!");
+// }
+
+
+
+// // Constants
+// const taxRate = 0.08; // 8% sales tax
+// const phonePrice = 500; // Price of one phone
+// const accessoryPrice = 50; // Price of one accessory
+// const spendingThreshold = 1000; // Your spending limit
+
+// // Function to calculate the tax on the purchase
+// function calculateTax(amount) {
+//     return amount * taxRate;
+// }
+
+// // Function to format a number as currency
+// function formatCurrency(amount) {
+//     return "$" + amount.toFixed(2);
+// }
+
+// // Prompt the user for their bank account balance
+// let bankAccountBalance = parseFloat(prompt("Enter your bank account balance:"));
+
+// if (isNaN(bankAccountBalance)) {
+//     console.log("Invalid input. Please enter a valid number for your bank account balance.");
+// } else {
+//     let totalPurchaseAmount = 0;
+
+//   while (totalPurchaseAmount + phonePrice <= bankAccountBalance) {
+//         totalPurchaseAmount += phonePrice;
+
+//         if (totalPurchaseAmount <= spendingThreshold) {
+//             totalPurchaseAmount += accessoryPrice;
+//         }
+//     }
+
+//     const taxAmount = calculateTax(totalPurchaseAmount);
+//     totalPurchaseAmount += taxAmount;
+
+//     console.log("Total purchase amount: " + formatCurrency(totalPurchaseAmount));
+
+//     if (totalPurchaseAmount > bankAccountBalance) {
+//         console.log("You cannot afford this purchase.");
+//     } else {
+//         console.log("Purchase successful!");
+//     }
+// }
+
+

@@ -1,21 +1,24 @@
-let x;
-let y;
-
-x = Math.floor(Math.random() * 100 + 1);
-
-y = Math.floor(Math.random() * 50 + 1);
-
-const sumOutput = `${x} + ${y} = ${x + y}`;
-const differenceOutput = `${x} - ${y} = ${x - y}`;
-const productOutput =  `${x} * ${y} = ${x * y}`;
-const quotientOutput = `${x} / ${y} = ${x / y}`;
-const rnOutput =  `${x} % ${y} = ${x % y}`;
+let d;
 
 
-console.log(sumOutput);
-console.log(differenceOutput);
-console.log(productOutput);
-console.log(quotientOutput);
-console.log(rnOutput);
+console.log(d);
 
-// i did the challenge
+
+d = new Date (2021, 6, 10);
+d = new Date (2021, 6, 10, 12, 30, 0);
+d = new Date('2021-07-10T12:30:00');
+d = new Date('07/10/2021'); // coz timezone might change;
+
+d = Date.now();
+
+d = new Date('01-01-1970');
+
+d = d.getTime();
+
+d = Date.now();
+
+d = new Date(1699018729736);
+
+d = Math.floor(Date.now() / 1000);
+
+console.log(d);

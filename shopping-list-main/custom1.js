@@ -1,19 +1,21 @@
 let x;
+let y;
 
-x = Math.sqrt(9);
+x = Math.floor(Math.random() * 100 + 1);
 
-x = Math.abs(-5);
+y = Math.floor(Math.random() * 50 + 1);
 
-x = Math.round(4.2);
+const sumOutput = `${x} + ${y} = ${x + y}`;
+const differenceOutput = `${x} - ${y} = ${x - y}`;
+const productOutput =  `${x} * ${y} = ${x * y}`;
+const quotientOutput = `${x} / ${y} = ${x / y}`;
+const rnOutput =  `${x} % ${y} = ${x % y}`;
 
-x = Math.ceil(4.2);
 
-x = Math.floor(5.9);
+console.log(sumOutput);
+console.log(differenceOutput);
+console.log(productOutput);
+console.log(quotientOutput);
+console.log(rnOutput);
 
-x = Math.pow(2, 3);
-
-x = Math.min(4, 5, 3);
-
-x = Math.round(Math.random() * 10 + 1);
-
-console.log(x);
+// i did the challenge

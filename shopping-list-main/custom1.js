@@ -1,24 +1,22 @@
-let d;
+let x;
+
+let d = new Date();
+
+x = d.toString();
+x = d.valueOf();
+x = d.getFullYear();
+x = d.getMonth() + 1;
+x = d.getDate();
+x = d.getDay();
+x = d.getHours();
+x = d.getMinutes();
+x = d.getSeconds();
+x = d.getMilliseconds();
+x = `${d.getFullYear()} - ${d.getMonth() + 1} - ${d.getDate()}`;
+x = x = x.split('').reverse().join('');
+x = Intl.DateTimeFormat('en-UK').format(d);
+x = Intl.DateTimeFormat('default', { month: 'long'}).format(d);
+x = d.toLocaleDateString('default', {month: 'short'});
 
 
-console.log(d);
-
-
-d = new Date (2021, 6, 10);
-d = new Date (2021, 6, 10, 12, 30, 0);
-d = new Date('2021-07-10T12:30:00');
-d = new Date('07/10/2021'); // coz timezone might change;
-
-d = Date.now();
-
-d = new Date('01-01-1970');
-
-d = d.getTime();
-
-d = Date.now();
-
-d = new Date(1699018729736);
-
-d = Math.floor(Date.now() / 1000);
-
-console.log(d);
+console.log(x);

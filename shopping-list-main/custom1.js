@@ -1,24 +1,30 @@
-const numbers = [12, 45, 33, 29, 39];
+let x;
 
-console.log(numbers);
+const arr = [34, 55, 95, 20, 15];
 
-// array constructor
+// arr.push(100);
 
-const fruits = new Array('apple', 'grape', 'orange');
+// arr.pop();
 
-x = `my favourite fruit is an ${fruits[2]}`;
+// arr.unshift(99);
 
-x = numbers.length;
+// arr.shift();
 
-fruits[2] = 'grape';
+// arr.reverse();
 
-x = fruits
+x = arr.includes(20);
 
-// fruits.length = 2;
+x = arr.indexOf(15);
 
-fruits[3] = 'strawberry';
+// x = arr.slice(3);
+// x = arr.slice(1, 3); doesnt modify array
 
-fruits[fruits.length] = 'blueberry';
-fruits[fruits.length] = 'peach';
+// x = arr.splice(1, 4) modifies array
+
+// x = arr.splice(3, 1);
+
+x = arr.splice(1, 4).reverse().toString().charAt(0);
+
+
 
 console.log(x);

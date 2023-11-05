@@ -1,40 +1,29 @@
-let x;
+// challenge 1 
 
-const fruits = [ 'apple', 'pear', 'orange'];
-const berries = ['strawberry', 'blueberry', 'raspberry'];
+// const arr = [1, 2, 3, 4, 5];
 
-// fruits.push(berries);
+// arr.push(6);
+// arr.unshift(0);
+// arr.reverse();
 
-// x = fruits[3];
 
-const allFruits = [fruits, berries];
+// console.log(arr);
 
-x = allFruits[1][0];
 
-x = fruits.concat(berries);
-// x = berries.concat(fruits);
+// challenge 2 
 
-// spread opearot (...)
 
-x = [...fruits, berries];
-x = [...fruits, ...berries];
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [5, 6, 7, 8, 9, 10];
 
-// flatten arrays
 
-const arr = [1, 2, [3, 4, 5], [6, 7], 8];
+const x = arr1.concat(arr2)
 
-x = arr.flat();
+const arr3 = x;
 
-// static methods on array object
+let y;
 
-x = Array.isArray('hello');
+y = arr3.splice(4, 1);
 
-x = Array.from('12345')
 
-const a = 1;
-const b = 2;
-const c = 3;
-
-x = Array.of(a, b, c);
-
-console.log(x);
+console.log(arr3);

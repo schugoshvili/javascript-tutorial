@@ -1,31 +1,28 @@
-const firstName = 'john';
-const lastName = 'doe';
-const age = 30;
-
-const person = {
-    firstName,
-    lastName,
-    age
-}
-
-console.log(person.lastName);
-
-// destructure
-
-const todo = {
+const post = {
     id: 1,
-    title: 'make bed',
-    user: {
-        name: 'John',
-    }
+    title: 'post one',
+    body: 'this is the body',
+};
+
+
+const str = JSON.stringify(post);
+
+// parse
+
+const obj = JSON.parse(str);
+
+const posts = [{
+    id: 1,
+    title: 'post one',
+    body: 'this is the body',
+}, {
+    id: 2,
+    title: 'post 2',
+    body: 'this is the body',
 }
+];
 
-const { id: todoId, title, user: {name}, } = todo;
+const str2 = JSON.stringify(posts);
 
-console.log(todoId);
 
-const numbers = [23, 67, 33, 49];
-
-const [...rest] = numbers;
-
-console.log(rest);
+console.log(str2);

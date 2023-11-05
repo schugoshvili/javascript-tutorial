@@ -1,30 +1,40 @@
 let x;
 
-const arr = [34, 55, 95, 20, 15];
+const fruits = [ 'apple', 'pear', 'orange'];
+const berries = ['strawberry', 'blueberry', 'raspberry'];
 
-// arr.push(100);
+// fruits.push(berries);
 
-// arr.pop();
+// x = fruits[3];
 
-// arr.unshift(99);
+const allFruits = [fruits, berries];
 
-// arr.shift();
+x = allFruits[1][0];
 
-// arr.reverse();
+x = fruits.concat(berries);
+// x = berries.concat(fruits);
 
-x = arr.includes(20);
+// spread opearot (...)
 
-x = arr.indexOf(15);
+x = [...fruits, berries];
+x = [...fruits, ...berries];
 
-// x = arr.slice(3);
-// x = arr.slice(1, 3); doesnt modify array
+// flatten arrays
 
-// x = arr.splice(1, 4) modifies array
+const arr = [1, 2, [3, 4, 5], [6, 7], 8];
 
-// x = arr.splice(3, 1);
+x = arr.flat();
 
-x = arr.splice(1, 4).reverse().toString().charAt(0);
+// static methods on array object
 
+x = Array.isArray('hello');
 
+x = Array.from('12345')
+
+const a = 1;
+const b = 2;
+const c = 3;
+
+x = Array.of(a, b, c);
 
 console.log(x);

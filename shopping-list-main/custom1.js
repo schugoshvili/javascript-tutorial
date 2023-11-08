@@ -1,26 +1,33 @@
-let x; 
+let d; 
 
- x = Math.sqrt(9);
+d = new Date();
 
- x = Math.abs(-5);
+d = new Date(2021, 1, 10, 12, 30, 20);
 
- x = Math.round(4.6);
+d = new Date('2021-07-10T12:30:20');
 
- x = Math.ceil(4.2);
+d = new Date('2021/07/10 12:30:20');
 
- x = Math.floor(4.8);
+d = new Date('2023-11-07');
 
- x = Math.pow(2, 4);
+d = new Date('11-07-2023');
 
- x = Math.min(4, 5);
+d = Date.now();
 
- x = Math.max(4, 5, 3);
+d = new Date(1699444838565);
 
- x = Math.random();
+d = Date.now();
 
- x = Math.floor(Math.random() * 10 + 1);
+d = new Date();
+
+d = d.getTime();
+
+d = d.valueOf();
+
+d = new Date();
+
+d = Math.floor(Date.now() / 1000);
 
 
- console.log(x);
 
-
+console.log(d);

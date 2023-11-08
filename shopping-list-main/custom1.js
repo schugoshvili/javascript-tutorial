@@ -1,33 +1,30 @@
-let d; 
+let x;
 
-d = new Date();
+let d = new Date();
 
-d = new Date(2021, 1, 10, 12, 30, 20);
+x = d.toString();
 
-d = new Date('2021-07-10T12:30:20');
+x = d.getTime();
 
-d = new Date('2021/07/10 12:30:20');
+x = d.valueOf();
 
-d = new Date('2023-11-07');
+x = d.getFullYear();
 
-d = new Date('11-07-2023');
+x = d.getMonth() + 1;
 
-d = Date.now();
+x = d.getDay();
 
-d = new Date(1699444838565);
+x = d.getMinutes();
 
-d = Date.now();
+x = d.getSeconds();
 
-d = new Date();
-
-d = d.getTime();
-
-d = d.valueOf();
-
-d = new Date();
-
-d = Math.floor(Date.now() / 1000);
+x = d.getMilliseconds();
 
 
+x = Intl.DateTimeFormat('en-US').format(d);
+x = Intl.DateTimeFormat('default', {month: 'long'}).format(d);
 
-console.log(d);
+x = d.toLocaleString('default', { month: 'short'});
+
+
+console.log(x);

@@ -1,32 +1,31 @@
 let x;
 
+const todo = {};
+
+todo.id = 1;
+todo.name = 'buy milk';
+todo.completed = false;
+
+x = todo;
+
 const person = {
-    name: 'john doe',
-    age: 34,
-    isAdmin: true,
+    name: 'John',
     adress: {
-    street: '123 main st',
-    city: 'barcelona',
-    state: 'ny'},
-    hobby: ['music', 'sports'],
+        coords: {
+            lng: 13.22,
+            lat: 9392.11
+        },
+    },
 };
 
-x = person.name;
-x = person['age'];
-x = person.adress.state;
-x = person.hobby[0];
+x = person.adress.coords.lat;
 
-delete person.age;
+const obj1 = {a: 1, b: 2};
+const obj2 = {c: 3, d: 4};
 
-person.hasChildren = true;
+const obj3 = {...obj1, ...obj2,};
+const obj4 = Object.assign({}, obj1, obj2);
 
-person.greet = function () {
-
-console.log(`hello my name is ${person.name}`); }
-
-person.greet();
-
-x = person;
-
+x = obj4;
 
 console.log(x);

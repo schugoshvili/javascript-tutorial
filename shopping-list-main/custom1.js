@@ -1,34 +1,32 @@
 let x;
 
-const fruits = ['apple', 'orange', 'pear'];
-const berries = ['strawberry', 'blueberry', 'raspberry'];
+const person = {
+    name: 'john doe',
+    age: 34,
+    isAdmin: true,
+    adress: {
+    street: '123 main st',
+    city: 'barcelona',
+    state: 'ny'},
+    hobby: ['music', 'sports'],
+};
 
-// fruits.push(berries);
+x = person.name;
+x = person['age'];
+x = person.adress.state;
+x = person.hobby[0];
 
-// x = fruits[3][1];
+delete person.age;
 
-const allFruits = [fruits, berries];
+person.hasChildren = true;
 
-x = allFruits;
+person.greet = function () {
 
-x = fruits.concat(berries);
+console.log(`hello my name is ${person.name}`); }
 
-x = [...fruits, ...berries];
+person.greet();
 
-// flatten
+x = person;
 
-const arr1 = [1, 2, [3, 4], 5, [6, 7], 8];
-
-arr2 = arr1.flat();
-
-x = Array.isArray(fruits);
-
-x = Array.from('12345');
-
-const a = 1;
-const b = 2;
-const c = 3;
-
-x = Array.of(a, b, c);
 
 console.log(x);

@@ -1,28 +1,34 @@
 let x;
 
-const arr = [23, 34, 444, 55, 67, 12];
+const fruits = ['apple', 'orange', 'pear'];
+const berries = ['strawberry', 'blueberry', 'raspberry'];
 
-// arr.push(100);
+// fruits.push(berries);
 
-// arr.pop();
+// x = fruits[3][1];
 
-// arr.unshift(123);
+const allFruits = [fruits, berries];
 
-// arr.shift();
+x = allFruits;
 
-// arr.reverse();
+x = fruits.concat(berries);
 
-x = arr.includes(12); // logs true;
+x = [...fruits, ...berries];
 
-x = arr.indexOf(340);
+// flatten
 
-x = arr.slice(1, 4);
+const arr1 = [1, 2, [3, 4], 5, [6, 7], 8];
 
-// x = arr.splice(0, 2);
+arr2 = arr1.flat();
 
-// x = arr.splice (2, 1);
+x = Array.isArray(fruits);
 
-x = arr.slice(1, 4).reverse().toString().charAt(0).toUpperCase();
+x = Array.from('12345');
 
+const a = 1;
+const b = 2;
+const c = 3;
+
+x = Array.of(a, b, c);
 
 console.log(x);

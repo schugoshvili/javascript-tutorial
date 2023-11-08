@@ -1,18 +1,28 @@
 let x;
 
-const numbers = [12, 45, 33, 29, 39];
+const arr = [23, 34, 444, 55, 67, 12];
 
-// array constructor
+// arr.push(100);
 
-const fruits = new Array('apple', 'orange',);
+// arr.pop();
 
-fruits[2] = 'pear';
+// arr.unshift(123);
 
-x = fruits;
+// arr.shift();
 
-fruits[3] = 'strawberry';
+// arr.reverse();
 
-fruits[fruits.length] = 'blueberry';
+x = arr.includes(12); // logs true;
+
+x = arr.indexOf(340);
+
+x = arr.slice(1, 4);
+
+// x = arr.splice(0, 2);
+
+// x = arr.splice (2, 1);
+
+x = arr.slice(1, 4).reverse().toString().charAt(0).toUpperCase();
 
 
 console.log(x);

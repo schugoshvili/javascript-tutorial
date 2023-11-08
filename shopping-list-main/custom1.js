@@ -1,30 +1,18 @@
 let x;
 
-let d = new Date();
+const numbers = [12, 45, 33, 29, 39];
 
-x = d.toString();
+// array constructor
 
-x = d.getTime();
+const fruits = new Array('apple', 'orange',);
 
-x = d.valueOf();
+fruits[2] = 'pear';
 
-x = d.getFullYear();
+x = fruits;
 
-x = d.getMonth() + 1;
+fruits[3] = 'strawberry';
 
-x = d.getDay();
-
-x = d.getMinutes();
-
-x = d.getSeconds();
-
-x = d.getMilliseconds();
-
-
-x = Intl.DateTimeFormat('en-US').format(d);
-x = Intl.DateTimeFormat('default', {month: 'long'}).format(d);
-
-x = d.toLocaleString('default', { month: 'short'});
+fruits[fruits.length] = 'blueberry';
 
 
 console.log(x);

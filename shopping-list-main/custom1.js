@@ -1,15 +1,17 @@
-// function declaration
 
-function addDollarSign(value) {
-    return value + '$';
-}
 
-console.log(addDollarSign(4));
+(function () {
+    const user = 'John';
+    console.log(user);
+    const hello = () => console.log('hello from the iffe');
+    hello();
+})();
 
-// fnction expression
 
-const addPlusSign = function (value) {
-    return value + ' +';
-}
+(function (name) {
+    console.log('hello ' + name);
+})('mendes');
 
-console.log(addPlusSign(5));
+(function hello() {
+    console.log('hello');
+})();

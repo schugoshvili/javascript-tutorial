@@ -1,21 +1,15 @@
-function first() {
-    const x = 100;
+// function declaration
 
-    function second() {
-        const y = 200;
-        console.log(x + y);
-    }
-    second();
-    // console.log(y);
+function addDollarSign(value) {
+    return value + '$';
 }
 
-first();
+console.log(addDollarSign(4));
 
-if (true) {
-    const x = 100;
-    if (x === 100) {
-    const y = 200;
-    console.log(x + y);
-    }
-    console.log(y);
+// fnction expression
+
+const addPlusSign = function (value) {
+    return value + ' +';
 }
+
+console.log(addPlusSign(5));

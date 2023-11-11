@@ -1,48 +1,9 @@
-function registerUser(user = 'bot') {
-    // if(!user) {
-    //     user = 'bot';
-    // }
-    return user + ' is registered';
+function add() {
+    const y = 50;
+    console.log(y);
 }
 
 
+add();
 
-console.log(registerUser('John'));
-
-// rest params
-
-function sum(...numbers) {
-    let total = 0;
-    for (const num of numbers) {
-        total += num;
-    }
-    return total;
-
-} 
-
-console.log(sum(1, 2, 3, 4, 5));
-
-// object as params
-
-function loginUser(user) {
-    return `The user ${user.username} with the id of ${user.id} is logged in`;
-}
-
-const user = {
-    id: 1,
-    username: 'john',
-};
-
-console.log(loginUser(user));
-console.log(loginUser({id: 2, username: 'messi'}));
-
-// arrays as params:
-
-function getRandom(...arr) {
-    const randomIndex = Math.floor(Math.random() * arr.length);
-
-    const item = arr[randomIndex];
-    console.log(item);
-}
-
-getRandom(1, 2, 4, 4, 5);
+console.log(y);

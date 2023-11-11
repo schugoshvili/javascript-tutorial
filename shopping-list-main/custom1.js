@@ -1,31 +1,20 @@
-let x;
-
-const todo = {};
-
-todo.id = 1;
-todo.name = 'buy milk';
-todo.completed = false;
-
-x = todo;
-
-const person = {
-    name: 'John',
-    adress: {
-        coords: {
-            lng: 13.22,
-            lat: 9392.11
-        },
-    },
+function sayHello() {
+    console.log('hello world');
 };
 
-x = person.adress.coords.lat;
+sayHello();
 
-const obj1 = {a: 1, b: 2};
-const obj2 = {c: 3, d: 4};
+function add(num1, num2) {
+    console.log(num1 + num2);
 
-const obj3 = {...obj1, ...obj2,};
-const obj4 = Object.assign({}, obj1, obj2);
+}
 
-x = obj4;
+add(5, 10);
 
-console.log(x);
+function subtract(num1, num2) {
+return num1 - num2;
+}
+
+const result = subtract(5, 10);
+
+console.log(result, subtract(10, 10));

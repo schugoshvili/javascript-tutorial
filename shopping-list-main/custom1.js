@@ -1,23 +1,14 @@
-// function first() {
-//     const x = 100;
+function addDollarSign(value) {
+    return '$' + value;
+};
 
-//     function second() {
-//     const y = 200;
-//     console.log(x + y);
-// };
-// second();
+console.log(addDollarSign(100)); 
 
-// }
+// 
 
-// first();
 
-if (true) {
-    const x = 100;
+const addPlusSign = function (value) {
+    return '+' + value;
+};
 
-    if (x === 100) {
-        const y = 200;
-        console.log(x + y);
-    }
-
-    console.log(y);
-}
+console.log(addPlusSign(100));

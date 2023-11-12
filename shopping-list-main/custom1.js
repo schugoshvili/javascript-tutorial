@@ -1,28 +1,21 @@
-// challenge 1
+function sayHello() {
+    console.log('hello world');
+}
 
-// const F2C = function(FH) {
-//     return (FH - 32) * 5/9;
-// };
+sayHello();
 
-const F2C = FH => (FH - 32) * 5/9;
+function add(num1, num2) {
+    console.log(num1 + num2);
 
-console.log(F2C(0) + '\xB0');
+}
 
-// challenge 2
+add(4, 1);
 
-const numbers = [1, 2, 3, 4, 5];
+function subtract(num1, num2) {
+    return num1 - num2;
+  
+}
 
-const minMax = () => ({
-    min: Math.min(...numbers),
-    max: Math.max(...numbers)
-});
+const result = subtract(4, 2);
 
-console.log(minMax());
-
-// challenge 3
-
-(function(width, length) {
-    console.log(`The area of a rectangle with width of ${width} 
-    and length of ${length} is ${width * length}`);
-})(5, 10);
-
+console.log(result, subtract(28, 8));

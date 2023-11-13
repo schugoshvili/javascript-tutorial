@@ -1,32 +1,32 @@
-const d = new Date(10, 30, 2020, 6, 0, 0);
+const d = new Date (2022, 3, 10, 23, 0, 0);
 
-const hour = d.getHours();
+hour = d.getHours();
+const month = d.getMonth();
 
-if (hour < 12) {
-console.log('good mornin');
-} else if (hour < 18) { console.log('GOOD AFTERNOON');
-} else {
-    console.log('good night');
+switch (month) {
+    case 1: 
+    console.log('it is january');
+    break;
+    case 2: 
+    console.log('it is february');
+    break;
+    case 3: 
+    console.log('it is march');
+    break;
+    default:
+        console.log('it is neither of first three months');
+
 }
 
-// nest if 
 
+switch (true) {
+    case hour < 12:
+    console.log('good morning');
+    break;
+    case hour < 16:
+        console.log('good afternoon');
+        break;
+    
+    default: console.log(' good night');
 
-if (hour < 12) {
-    console.log('good mornin');
-if (hour === 6) console.log('wake up!');
-
-    } else if (hour < 18) { console.log('GOOD AFTERNOON');
-    } else {
-        console.log('good night');
-
-        if (hour >= 23) console.log('g night');
-    }
-
-    if (hour >= 7 && hour <15) {
-        console.log('it is work time');
-    }
-
-    if (hour === 6 || hour === 20 ) {
-        console.log('brush your teeth');
-    }
+}

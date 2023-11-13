@@ -1,28 +1,56 @@
-// challenge 1 
+if (true) {
+    console.log('this is true');
+}
 
-function getCelsius(fheit) {
-    return (fheit - 32) * 5 / 9;
-};
+if (false) {
+    console.log('this is false');
+}
 
-console.log(`the temperature is ${getCelsius(32)}\xB0C`);
+const x = 100;
+const y = 5;
 
-// challenge 2 
+if (x >= y) {
+    console.log(`${x} is greater than, or equal to ${y}`);
 
-function minMax(arr) {
-    const min = Math.max(...arr);
-    const max = Math.min(...arr);
-    return {min, max};
-};
+}
 
-console.log(minMax([1, 2, 3, 0, 4, 8, 5, 6]));
+if (x === y) {
+    console.log(`${x} is equal to ${y}`);
 
-// challenge 3 
+} else {
+    console.log(`${x} is NOT equal to ${y}`);
+}
 
-((length, width) => { 
-    const area = length * width;
+if (x !== y) {
+    const z = 20;
+    console.log(`${z} is 20`);
+}
 
-    const result = `the area of a rectangle with length of ${length}
-     and a width of ${width} is ${area}`;
-    alert(result); // Add this line to log the result
-})(2, 4);
+// short if 
+
+
+if (x >= y) console.log(`${x} is greater than, or equal to ${y}`),
+console.log('this is true');
+
+else console.log('this is false');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,56 +1,32 @@
-if (true) {
-    console.log('this is true');
-}
+const d = new Date(10, 30, 2020, 6, 0, 0);
 
-if (false) {
-    console.log('this is false');
-}
+const hour = d.getHours();
 
-const x = 100;
-const y = 5;
-
-if (x >= y) {
-    console.log(`${x} is greater than, or equal to ${y}`);
-
-}
-
-if (x === y) {
-    console.log(`${x} is equal to ${y}`);
-
+if (hour < 12) {
+console.log('good mornin');
+} else if (hour < 18) { console.log('GOOD AFTERNOON');
 } else {
-    console.log(`${x} is NOT equal to ${y}`);
+    console.log('good night');
 }
 
-if (x !== y) {
-    const z = 20;
-    console.log(`${z} is 20`);
-}
-
-// short if 
+// nest if 
 
 
-if (x >= y) console.log(`${x} is greater than, or equal to ${y}`),
-console.log('this is true');
+if (hour < 12) {
+    console.log('good mornin');
+if (hour === 6) console.log('wake up!');
 
-else console.log('this is false');
+    } else if (hour < 18) { console.log('GOOD AFTERNOON');
+    } else {
+        console.log('good night');
 
+        if (hour >= 23) console.log('g night');
+    }
 
+    if (hour >= 7 && hour <15) {
+        console.log('it is work time');
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    if (hour === 6 || hour === 20 ) {
+        console.log('brush your teeth');
+    }

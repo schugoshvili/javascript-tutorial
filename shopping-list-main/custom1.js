@@ -1,18 +1,33 @@
-const x = 10;
+const d = new Date(10, 30, 2022, 14, 0, 0);
 
-const y = 20;
+const hour = d.getHours();
 
-if (x > y) {
-    console.log(`${x} is greater than ${y}`);
+if (hour < 12) {
+    console.log('good morning');
+} else if (hour < 18) {
+    console.log('good morning');
 } else {
-    console.log(`${x} is not greater than ${y}`);
+    console.log('gnight');
 }
 
-if (x !== y) {
-    const z = 20;
+// nested if 
 
+if (hour < 12) {
+    console.log('good morning');
 
-    console.log('yes');
+    if (hour === 6) {
+        console.log('wake up');
+    }
+} else if (hour < 18) {
+    console.log('good morning');
 } else {
-    console.log('no');
+    console.log('gnight');
+
+    if (hour >=20) {
+        console.log('zzzzzzzzzzzz');
+    }
+}
+
+if (hour >= 7 && hour < 15) {
+    console.log('it is work time');
 }

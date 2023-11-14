@@ -1,30 +1,34 @@
-const d = new Date(2022, 1, 10, 23, 0, 0);
+// function calculator(num1, num2, op) {
+//     if (op === '+') {
+//         return num1 + num2;
+//     } else if (op === '-') {
+//         return num1 - num2;
+//     } else if (op === '/') {
+//         return num1 / num2;
+//     } else if (op === '*') {
+//         return num1 * num2;
+//     } else {
+//         return 'error here'
+//     }
+// }
 
-const month = d.getMonth();
-const hour = d.getHours();
+// let result = calculator(1723384, 13, '*');
 
-console.log(month);
+// console.log(result);
 
-switch (month) {
-    case 1: 
-    console.log('it is january');
-    break;
-    case 2: 
-    console.log('it is feb');
-    case 3: 
-    console.log('it is march');
-    default:
-        console.log('its neither of em');
-}
+function calculator(num1, num2, op) {
+    switch (op) {
+        case '+': 
+        console.log(num1 + num2); break;
+        case '-': 
+        console.log(num1 - num2); break;
+        case '*': 
+        console.log(num1 * num2); break;
+        case '/': 
+        console.log(num1 / num2); break;
+        default: 
+        console.log('error');
+    }
+};
 
-
-switch (true) {
-    case hour < 12:
-    console.log('good morning');
-    break;
-    case hour < 18:
-        console.log('good after noon');
-        break;
-        default:
-            console.log('good night');
-}
+calculator (4, 2, '/')

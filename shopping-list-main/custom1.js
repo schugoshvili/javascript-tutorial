@@ -31,7 +31,10 @@ const auth = true;
 //     redirect = '/login';
 // }
 
-const redirect = auth ? (alert('welkommen to the dashboard'), '/dashboard') 
-: (alert('access denied'), '/login');
+// const redirect = auth ? (alert('welkommen to the dashboard'), '/dashboard') 
+// : (alert('access denied'), '/login');
 
-console.log(redirect);
+// console.log(redirect);
+
+auth ? console.log('welkommen to the dashboard') : null;
+auth && console.log('welkommen to the dashboard');

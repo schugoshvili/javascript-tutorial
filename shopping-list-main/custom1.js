@@ -1,40 +1,28 @@
-const age = 12;
-
-// using an if statement
-
-if (age >= 18) {
-    console.log('you can vote ');
-} else {
-    console.log('you cannot vote');
-}
-
-age >= 18 ? console.log('you can vote ') : console.log('you cannot vote');
-
-// assigning a conditional value to variable
-
-const canVote = age >= 18 ? true : false;
-const canVote2 = age >= 18 ? 'u can vote' : 'u cannot vote';
-
-console.log(canVote);
-console.log(canVote2);
-
-// multiple statements 
-
-const auth = true;
-// let redirect;
-
-// if (auth) {
-//     alert('welkomment to dashbord'); 
-//     redirect = '/dashboard';
-// } else {
-//     alert('access denied');
-//     redirect = '/login';
+// for (let i = 0; i <= 10; i++)  {
+//     if (i === 6) {
+//         console.log('6 is leo Messi');
+//     } else {
+//     console.log('number ' + i);}
 // }
 
-// const redirect = auth ? (alert('welkommen to the dashboard'), '/dashboard') 
-// : (alert('access denied'), '/login');
+// nest loops
 
-// console.log(redirect);
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i + ' number');
+//     for (let j = 1; j <= 10; j++) {
+//         console.log(`${i} * ${j} = ${i * j}`);
+//     }
+// }
 
-auth ? console.log('welkommen to the dashboard') : null;
-auth && console.log('welkommen to the dashboard');
+const names = ['brad', 'sam', 'sarah', 'john', 'tim'];
+
+for (let i = 0; i < names.length; i++) {
+    if (i === 2) {
+        console.log(names[i] + ' is a whore');
+
+    } else if (i === 3) {
+        console.log(names[i] + ' is very uneducated person');
+    } else {
+    console.log(names[i]); }
+}
+

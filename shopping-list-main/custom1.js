@@ -1,34 +1,37 @@
-let a = false;
+const age = 12;
 
-if (!a) {
-    a = 10;
+// using an if statement
+
+if (age >= 18) {
+    console.log('you can vote ');
+} else {
+    console.log('you cannot vote');
 }
 
-// a = a || 10;
+age >= 18 ? console.log('you can vote ') : console.log('you cannot vote');
 
-a ||= 20;
+// assigning a conditional value to variable
 
-// console.log(a);
+const canVote = age >= 18 ? true : false;
+const canVote2 = age >= 18 ? 'u can vote' : 'u cannot vote';
 
-// e
+console.log(canVote);
+console.log(canVote2);
 
-let b = 10;
+// multiple statements 
 
-if (b) {
-    b = 20;
-}
+const auth = true;
+// let redirect;
 
-b = b && 20;
+// if (auth) {
+//     alert('welkomment to dashbord'); 
+//     redirect = '/dashboard';
+// } else {
+//     alert('access denied');
+//     redirect = '/login';
+// }
 
-b &&= b;
+const redirect = auth ? (alert('welkommen to the dashboard'), '/dashboard') 
+: (alert('access denied'), '/login');
 
-
-console.log(b); 
-//
-
-let c = null;
-
-if (c === null || c === undefined)  {
-    c = 20;
-}
-
+console.log(redirect);

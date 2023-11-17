@@ -1,26 +1,29 @@
-for (let i = 1; i <= 100; i++) {
-    
-    if (i % 3 === 0 && i % 5 > 0) {
-        console.log('fizz');
-    } else if (i % 5 === 0 && i % 3 > 0) { 
-        console.log('buzz');
-    } else if (i % 3 === 0 && i % 5 === 0) {
-        console.log('fizzbuzz');
-    } else {
-    console.log('num ' + i);
-}
-};
+const items = ['book', 'table', 'kite', 'chair'];
+const users = [
+    { name: 'brad'},
+    { name: 'sese'},
+    { name: 'dato'},
+];
 
-let j = 1;
+// for (const item of items) {
+//     console.log(club);
+// }
 
-while (j <= 100) { 
-    if ( j % 3 === 0 && j % 5 === 0) {
-        console.log('FizzBuzz');
-    } else if ( j % 3 === 0) {
-        console.log('Fizz');
-    } else if ( j % 5 === 0) {
-        console.log('FizzBuzz');
-    } else {  console.log(j); }
-    j++; 
+for (const user of users) {
+    console.log(user.name);
 }
 
+const str = 'hello world';
+
+for (const letter of str) {
+    console.log(letter);
+}
+
+const map = new Map();
+
+map.set ('name', 'john');
+map.set ('age', '50');
+
+for (const [key, value] of map) {
+    console.log(key, value);
+}

@@ -1,29 +1,18 @@
-const items = ['book', 'table', 'kite', 'chair'];
-const users = [
-    { name: 'brad'},
-    { name: 'sese'},
-    { name: 'dato'},
-];
+const colourObj = {
+    colour1: 'Red',
+    colour2: 'blue',
+    colour3: 'green',
+    colour4: 'black',
+    colour5: 'rose',
+};
 
-// for (const item of items) {
-//     console.log(club);
-// }
-
-for (const user of users) {
-    console.log(user.name);
+for (const key in colourObj) {
+    console.log(key, colourObj[key], typeof colourObj[key], typeof key);
 }
 
-const str = 'hello world';
 
-for (const letter of str) {
-    console.log(letter);
-}
+const colourArr = ['red', 'green', 'blue', 'yellow'];
 
-const map = new Map();
-
-map.set ('name', 'john');
-map.set ('age', '50');
-
-for (const [key, value] of map) {
-    console.log(key, value);
+for (const key in colourArr) {
+    console.log(colourArr[key]);
 }

@@ -1,28 +1,19 @@
-// for (let i = 0; i <= 10; i++)  {
-//     if (i === 6) {
-//         console.log('6 is leo Messi');
-//     } else {
-//     console.log('number ' + i);}
-// }
-
-// nest loops
-
-// for (let i = 1; i <= 10; i++) {
-//     console.log(i + ' number');
-//     for (let j = 1; j <= 10; j++) {
-//         console.log(`${i} * ${j} = ${i * j}`);
+// for (let i = 0; i <= 20; i++) {
+//     if (i === 15) {
+//         console.log('breaking');
+//         break;
 //     }
+//     console.log(i);
 // }
 
-const names = ['brad', 'sam', 'sarah', 'john', 'tim'];
+// continue
 
-for (let i = 0; i < names.length; i++) {
-    if (i === 2) {
-        console.log(names[i] + ' is a whore');
+for (let i = 0; i <= 20; i++) {
+    if (i === 13) {
+        console.log('skippin thirtiin..');
+        continue;
+    }
 
-    } else if (i === 3) {
-        console.log(names[i] + ' is very uneducated person');
-    } else {
-    console.log(names[i]); }
+
+    console.log(i);
 }
-

@@ -1,34 +1,34 @@
-// function calculator(num1, num2, op) {
-//     if (op === '+') {
-//         return num1 + num2;
-//     } else if (op === '-') {
-//         return num1 - num2;
-//     } else if (op === '/') {
-//         return num1 / num2;
-//     } else if (op === '*') {
-//         return num1 * num2;
-//     } else {
-//         return 'error here'
-//     }
-// }
+let a = false;
 
-// let result = calculator(1723384, 13, '*');
+if (!a) {
+    a = 10;
+}
 
-// console.log(result);
+// a = a || 10;
 
-function calculator(num1, num2, op) {
-    switch (op) {
-        case '+': 
-        console.log(num1 + num2); break;
-        case '-': 
-        console.log(num1 - num2); break;
-        case '*': 
-        console.log(num1 * num2); break;
-        case '/': 
-        console.log(num1 / num2); break;
-        default: 
-        console.log('error');
-    }
-};
+a ||= 20;
 
-calculator (4, 2, '/')
+// console.log(a);
+
+// e
+
+let b = 10;
+
+if (b) {
+    b = 20;
+}
+
+b = b && 20;
+
+b &&= b;
+
+
+console.log(b); 
+//
+
+let c = null;
+
+if (c === null || c === undefined)  {
+    c = 20;
+}
+

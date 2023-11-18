@@ -1,31 +1,19 @@
-// for ([initialExpression]; [conditionalExpression]; [incrementExpression])
-// statement;
-
-// for (let i = 0; i <= 10; i++) {
-//     if (i === 5) {
-//         console.log('nacionalebo ait');
-//     } else {
-//     console.log('Num ' + i);
+// for (let i = 0; i <= 20; i++) {
+//     if (i === 17) {
+// console.log('breakin the chain...');
+// break;
 //     }
+//     console.log(i);
 // }
 
-// nest loops 
+// continue
 
-// for (let i = 1; i <= 10; i++) {
-//     console.log('Number ' + i);
+for (let i = 0; i <= 20; i++) {
 
-//     for (let j = 1; j <= 5; j++) {
-//         console.log(`${i} ჯერ ${j} უდრის ${i * j}-ს`);
-//     }
-// }
+    if (i === 13) {
+        console.log('skippin 13');
+        continue;
+    }
 
-const names = ['ia', 'dato', 'sandreksa', 'kato'];
-
-for (let i = 0; i < names.length; i++) {
-
-    if (i === 2) {
-        console.log('sandreksa aris kai kaci');
-    } else {
-
-    console.log(names[i]);}
+    console.log(i);
 }

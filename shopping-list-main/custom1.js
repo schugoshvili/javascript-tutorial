@@ -1,44 +1,31 @@
-const age = 17;
+// for ([initialExpression]; [conditionalExpression]; [incrementExpression])
+// statement;
 
-if (age >= 18) {
-    console.log(' u can vote');
-} else {
-    console.log('u can not vote');
-}
-
-// usin a ternary operator
-
-age >= 18 ? console.log('u can vote') : console.log('u cannot vote');
-
-// assigning a conditional value to variable
-
-
-const canVote = age >= 18 ? true : false;
-const canVote2 = age >= 18 ? 'u can vote' : 'u cannot vote';
-
-console.log(canVote, canVote2);
-
-// multiple statements
-
-// const auth = true;
-// let redirect;
-
-// if (auth) {
-//     alert('welkommen to the dashboard');
-//     redirect = '/dashboard';
-// } else {
-//     alert ('access denied');
-//     redirect = '/login';
+// for (let i = 0; i <= 10; i++) {
+//     if (i === 5) {
+//         console.log('nacionalebo ait');
+//     } else {
+//     console.log('Num ' + i);
+//     }
 // }
 
-const auth = true;
+// nest loops 
 
-// const redirect = auth 
-// ? (alert('welkommen'), '/dashboard') 
-// : (alert('access denied'), '/login');
+// for (let i = 1; i <= 10; i++) {
+//     console.log('Number ' + i);
 
-// console.log(redirect);
+//     for (let j = 1; j <= 5; j++) {
+//         console.log(`${i} ჯერ ${j} უდრის ${i * j}-ს`);
+//     }
+// }
 
-auth ? console.log('welkommen to the dashboard') : null;
+const names = ['ia', 'dato', 'sandreksa', 'kato'];
 
-auth  && console.log('welcome to the dashboard');
+for (let i = 0; i < names.length; i++) {
+
+    if (i === 2) {
+        console.log('sandreksa aris kai kaci');
+    } else {
+
+    console.log(names[i]);}
+}

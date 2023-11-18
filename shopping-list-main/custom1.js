@@ -1,33 +1,27 @@
-let i = 25;
+// for (let i = 1; i <= 100; i++) {
 
-// while (i <= 20) {
-//     console.log('Num ' + i);
-//     i++;
+//     if (i % 3 === 0 && i % 5 === 0) {
+//         console.log('FizzBuzz');
+//     } else if (i % 5 === 0 ) {
+//         console.log('Buzz');
+//     } else if (i % 3 === 0 ) {
+//         console.log('Fizz');
+//     } else {
+//     console.log(i);}
 // }
 
-// loop over arrays
+let j = 1;
 
-// const arr = [10, 20, 30, 40];
-
-// while (i < arr.length) {
-//     console.log(arr[i]);
-//     i++;
-// }
-
-// nesting while loops
-
-// while (i <= 5) {
-//     console.log('Num ' + i);
-
-//     let j = 1;
-//     while (j <= 5) {
-//         console.log(`${i} * ${j} = ${i * j}`);
-//         j++;
-//     }
-//     i++;
-// }
-
-do {
-    console.log('Number ' + i);
-    i++;
-} while (i <= 20);
+while (j <= 100) {
+    
+    if (j % 3 === 0 && j % 5 === 0) {
+        console.log('FizzBuzz');
+    } else if (j % 3 === 0) {
+        console.log('Fizz');
+    } else if (j % 5 === 0) { 
+        console.log('Buzz');
+    } else {
+    console.log(j);
+} 
+j++;
+}

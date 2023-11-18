@@ -1,14 +1,38 @@
-function checkEvenOrOdd(number) {
-    if (number % 2 === 0) {
-        return 'even';
-    } else {
-        return 'odd';
-    }
+let a = false;
+
+if (!a) {
+    a = 10;
+};
+
+a = a || 10;
+
+a ||= 10;
+
+console.log(a);
+
+//
+
+let b = 10;
+
+if (b) {
+    b = 20;
 }
 
-// Example usage:
-var num1 = 8;
-console.log(num1 + " is " + checkEvenOrOdd(num1));
+console.log(b);
 
-var num2 = 15;
-console.log(num2 + " is " + checkEvenOrOdd(num2));
+b = b && 20;
+
+b &&= 20;
+
+//
+let c = null;
+
+if (c === null || c === undefined) {
+    c = 20;
+}
+ 
+c = c ?? 20;
+
+c ??= 20;
+
+console.log(c);

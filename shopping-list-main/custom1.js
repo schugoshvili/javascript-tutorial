@@ -37,5 +37,10 @@ const companies = [
 
 //
 
-const earlyCompanies = companies.filter((company) => company.start >= 1980 && company.end <= 2025);
-console.log(earlyCompanies);
+// const earlyCompanies = companies.filter((company) => company.start >= 1980 && company.end <= 2025);
+// console.log(earlyCompanies);
+
+// get companies that lasted 10 or more
+
+const longCompanies = companies.filter((company) => company.end - company.start >= 10 );
+console.log(longCompanies);

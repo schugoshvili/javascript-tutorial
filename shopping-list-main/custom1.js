@@ -1,21 +1,22 @@
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// const evenNumbers = numbers.filter(function (number) {
-//     return number % 2 === 0;
-// })
+// const doubledNumbers = numbers.map((number) => 'freakin ' + number);
 
-// console.log(evenNumbers);
 
-// let evenNumbers = [];
+
+// console.log(doubledNumbers); 
+
+// // Same with forEach
+
+// const doubledNumbers2 = [];
 
 // numbers.forEach((number) => {
-//     if (number % 2 === 0) {
-//         evenNumbers.push(number);
-
-//     }
+//     doubledNumbers2.push(number * 2);
 // });
 
-// console.log(evenNumbers);
+// console.log(doubledNumbers2);
+
+
 
 const companies = [
     { name: 'BMW', category: 'Automotive', start: 1916, end: 2023 },
@@ -28,19 +29,51 @@ const companies = [
     { name: 'Samsung', category: 'Technology', start: 1938, end: 2023 },
     { name: 'Toyota', category: 'Automotive', start: 1937, end: 2023 }
   ];
-  
-//   const techCompanies = companies.filter((company) =>
-//    company.category === 'Technology');
+
+  // create an array of company names
+
+//   const companyNames = companies.map((company) => company.name
+//    );
+
+//    console.log(companyNames);
+
+//    // 
+
+//    const companyNC = companies.map((company) => company.name + ' - ' + company.category);
+
+//    console.log(companyNC);
+
+// const companyYears = companies.map((company) => {
+//     return {
+//         name: company.name,
+//         length: company.end - company.start
+//     }
+// }
+// );
+
+// console.log(companyYears);
+
+// const squareAndDouble = numbers
+// .map((number) => Math.sqrt(number))
+// .map((sqrt) => sqrt * 2);
 
 
-// console.log(techCompanies);
 
-//
+// const squareAndDouble2 = numbers
+// .map( function (number) {
+//     return Math.sqrt(number);
+// })
+// .map(function (sqrt) {
+//     return sqrt * 2;
+// })
+// .map(function (sqrtDoubled) {
+//     return sqrtDoubled * 2;
+// }
+// )
 
-// const earlyCompanies = companies.filter((company) => company.start >= 1980 && company.end <= 2025);
-// console.log(earlyCompanies);
 
-// get companies that lasted 10 or more
+const evenDouble = numbers
+.filter((number) => number % 2 === 0)
+.map((number) => number * 2);
 
-const longCompanies = companies.filter((company) => company.end - company.start >= 10 );
-console.log(longCompanies);
+console.log(evenDouble);

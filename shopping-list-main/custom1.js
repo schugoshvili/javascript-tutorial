@@ -1,25 +1,41 @@
-const socials = ['twitter', 'linkedin', 'facebook', 'instagram'];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// 
+// const evenNumbers = numbers.filter(function (number) {
+//     return number % 2 === 0;
+// })
 
-// socials.forEach(function (item) {
-// console.log(item);
+// console.log(evenNumbers);
+
+// let evenNumbers = [];
+
+// numbers.forEach((number) => {
+//     if (number % 2 === 0) {
+//         evenNumbers.push(number);
+
+//     }
 // });
 
-// socials.forEach((item, index, arr) => {
-// console.log(`${index} - ${item}`, arr);
-// });
+// console.log(evenNumbers);
 
-function logSocials(social) {
-    console.log(social);
-}
+const companies = [
+    { name: 'BMW', category: 'Automotive', start: 1916, end: 2023 },
+    { name: 'Apple', category: 'Technology', start: 1976, end: 2023 },
+    { name: 'Nike', category: 'Apparel', start: 1964, end: 2023 },
+    { name: 'Microsoft', category: 'Technology', start: 1975, end: 2023 },
+    { name: 'Coca-Cola', category: 'Beverages', start: 1886, end: 2023 },
+    { name: 'Amazon', category: 'E-Commerce', start: 1994, end: 2023 },
+    { name: 'Google', category: 'Technology', start: 1998, end: 2023 },
+    { name: 'Samsung', category: 'Technology', start: 1938, end: 2023 },
+    { name: 'Toyota', category: 'Automotive', start: 1937, end: 2023 }
+  ];
+  
+//   const techCompanies = companies.filter((company) =>
+//    company.category === 'Technology');
 
-// socials.forEach(logSocials);
 
-const socialObjs = [{ name: 'twitter', email: 'twitter@example.com'},
-{name: 'facebook', email: 'facebook@example.com'},
-{name: 'linkedin', email: 'linkedin@example.com'},
-{name: 'instagram', email: 'instagram@example.com'}
-];
+// console.log(techCompanies);
 
-socialObjs.forEach((item) => console.log(item.email));
+//
+
+const earlyCompanies = companies.filter((company) => company.start >= 1980 && company.end <= 2025);
+console.log(earlyCompanies);

@@ -1,16 +1,25 @@
-// const colourObj = {
-//     colour1: 'blue',
-//     colour2: 'orange',
-//     colour3: 'green',
-//     colour4: 'yellow'
-// };
+const socials = ['twitter', 'linkedin', 'facebook', 'instagram'];
 
-// for (const key in colourObj) {
-//     console.log(colourObj[key]);
-// }
+// 
 
-const colourArr = ['red', 'green', 'yellow'];
+// socials.forEach(function (item) {
+// console.log(item);
+// });
 
-for (const colour in colourArr) {
-    console.log(colourArr[colour]);
+// socials.forEach((item, index, arr) => {
+// console.log(`${index} - ${item}`, arr);
+// });
+
+function logSocials(social) {
+    console.log(social);
 }
+
+// socials.forEach(logSocials);
+
+const socialObjs = [{ name: 'twitter', email: 'twitter@example.com'},
+{name: 'facebook', email: 'facebook@example.com'},
+{name: 'linkedin', email: 'linkedin@example.com'},
+{name: 'instagram', email: 'instagram@example.com'}
+];
+
+socialObjs.forEach((item) => console.log(item.email));

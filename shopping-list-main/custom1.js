@@ -1,48 +1,40 @@
-// capitalize challenge
+const library = [{
+  title:'xevisberi gocha',
+  author:'chortioznaeti',
+  status: {
+    own:true,
+    reading:false,
+    read: false,
+  },
+},
+{
+  title:'mglis biliki',
+  author:'noideava',
+  status: {
+    own: true,
+    reading: false,
+    read: false,
+  },
+},
+{
+  title:'100 years of solitude',
+  author:'gabriel garcia marquez',
+  status: {
+    own: true,
+    reading: false,
+    read: false,
+  },
+},]
 
-let myString = 'developer';
+library.forEach((book) => {book.status.read = true;
+});
 
-let newString = myString.charAt(0).toUpperCase() + myString.slice(1);
+console.log(library);
 
-//console.log(newString);
+const {title: firstBook} = library[0];
 
-// math challenge
+console.log(firstBook);
 
-let x = Math.floor(Math.random() * 100 + 1);
-let y = Math.floor(Math.random() * 50 + 1);
-let sum = x + y;
-let difference = x - y;
-let product = x * y;
-let quotient = x / y;
-let remainder = x % y;
+const libJSON = JSON.stringify(library);
 
-
-
-// console.log(x, y)
-// console.log(sum);
-// console.log(difference);
-// console.log(product);
-// console.log(quotient);
-// console.log(remainder);
-
-// array challenge
-
-// challenge1 
-
-const arr = [1, 2, 3, 4, 5];
-
-arr.reverse();
-arr.push(0);
-arr.unshift(6);
-
-// console.log(arr);
-
-
-const arr1 = [1, 2, 3, 4, 5];
-const arr2 = [5, 6, 7, 8, 9, 10];
-
-const arr3 = [...arr1.slice(0, 4).concat(arr2)];
-
-
-console.log(arr3, typeof arr3);
-
+console.log(typeof libJSON, libJSON);
